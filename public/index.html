@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordTek AS - Linux Monitor</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h3>NordTek AS</h3>
+            <h2>Linux System Monitor</h2>
+        </header>
+        <section id="basic-info-wrapper">
+
+            <div class="sub-wrapper">
+                <div class="item-wrapper">
+                    <label class="item-label">Hostname</label>
+                    <span class="item-value" id="hostname">unknown</span>
+                </div>
+                <div class="item-wrapper">
+                    <label class="item-label">Operating System</label>
+                    <span class="item-value" id="os">unknown</span>
+                </div>
+                <div class="item-wrapper">
+                    <label class="item-label">Kernel</label>
+                    <span class="item-value" id="kernel">unknown</span>
+                </div>
+                <div class="item-wrapper">
+                    <label class="item-label">IP Address</label>
+                    <span class="item-value" id="ip_addr">unknown</span>
+                </div>
+            </div>
+
+            <div class="sub-wrapper">
+                <div class="item-wrapper">
+                    <label class="item-label">Uptime</label>
+                    <span class="item-value" id="uptime">unknown</span>
+                </div>
+                <div class="item-wrapper">
+                    <label class="item-label">Process Count</label>
+                    <span class="item-value" id="process_count">unknown</span>
+                </div>
+            </div>
+
+        </section>
+        <section id="resources-info-wrapper">
+
+            <div class="resource-wrapper">
+                <div class="radial-progress-bar" id="cpu-radial-bar">
+                    <label class="resource-label">CPU</label>
+                    <div class="resource-value-wrapper">
+                        <h2 class="resource-value" id="cpu_used_percent">?</h2>
+                        <span class="suffix">%</span>
+                    </div>
+                </div>
+
+                <div class="secondary-wrapper">
+                    <div class="item-wrapper">
+                        <label class="item-label">Current Freq. </label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="cpu_current_freq">?</span>
+                            <span class="suffix">Mhz</span>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <label class="item-label">Package Temp.</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="cpu_package_temp">?</span>
+                            <span class="suffix">°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource-wrapper">
+                <div class="radial-progress-bar" id="memory-radial-bar">
+                    <label class="resource-label">Memory</label>
+                    <div class="resource-value-wrapper">
+                        <h2 class="resource-value" id="memory_used_percent">?</h2>
+                        <span class="suffix">%</span>
+                    </div>
+                </div>
+
+                <div class="secondary-wrapper">
+                    <div class="item-wrapper">
+                        <label class="item-label">Total</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="memory_total_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <label class="item-label">Free</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="memory_free_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <label class="item-label">Used</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="memory_used_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource-wrapper">
+                <div class="radial-progress-bar" id="disk-radial-bar">
+                    <label class="resource-label">Disk</label>
+                    <div class="resource-value-wrapper">
+                        <h2 class="resource-value" id="disk_used_percent">?</h2>
+                        <span class="suffix">%</span>
+                    </div>
+                </div>
+
+                <div class="secondary-wrapper">
+                    <div class="item-wrapper">
+                        <label class="item-label">Total</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="disk_total_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <label class="item-label">Free</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="disk_free_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <label class="item-label">Used</label>
+                        <div class="item-value-wrapper">
+                            <span class="item-value" id="disk_used_gb">?</span>
+                            <span class="suffix">GB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

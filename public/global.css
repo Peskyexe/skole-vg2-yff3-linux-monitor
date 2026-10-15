@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --bg-1: oklch(0.25 0.01 260);
+    --bg-2: oklch(0.27 0.01 260);
+
+    --border-1: oklch(0.34 0.01 260);
+    --border-2: oklch(0.37 0.01 260);
+
+    --text: oklch(0.97 0.01 260);
+    --text-muted: oklch(0.73 0.01 260);
+
+    --primary: oklch(0.8 0.1 260);
+
+    --radius-1: 12px;
+    --radius-2: 6px;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

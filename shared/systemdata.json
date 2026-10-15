@@ -1,0 +1,27 @@
+{
+    "system_info": {
+        "hostname": "jobusu-ThinkPad-L460",
+        "os": "Ubuntu 20.04.6 LTS",
+        "kernel": "Linux 5.4.0-216-generic",
+        "ip_addr": "10.1.120.222",
+        "uptime": "0 days, 0 hours, 24 minutes",
+        "process_count": 237
+    },
+    "cpu": {
+        "cpu_current_freq": 2300,
+        "cpu_package_temp": 49.0,
+        "cpu_used_percent": 93
+    },
+    "memory": {
+        "memory_total_gb": 7.6,
+        "memory_free_gb": 3.6,
+        "memory_used_gb": 4.0,
+        "memory_used_percent": 53
+    },
+    "disk": {
+        "disk_total_gb": 116.3,
+        "disk_free_gb": 98.7,
+        "disk_used_gb": 11.7,
+        "disk_used_percent": 11
+    }
+}
